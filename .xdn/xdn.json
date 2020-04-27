@@ -1,47 +1,16 @@
 {
-  "version": "1.15.0-alpha.2",
+  "version": "1.15.2",
   "backends": {},
   "destinations": {
     "default": {
       "index": 0,
       "routes": [
         {
-          "path": "/__xdn__/prefetch.js",
+          "path": "/__xdn__/cache-manifest.js",
           "match": [
             {
               "value": "${path}",
-              "matchRegex": "^/__xdn__/prefetch\\.js(?=\\?|$)"
-            }
-          ],
-          "cache": {
-            "maxAgeSeconds": 31536000
-          },
-          "route": {
-            "action": "proxy",
-            "backend": "__js__"
-          },
-          "transform": {
-            "response": [
-              {
-                "action": "set-header",
-                "name": "Cache-Control",
-                "value": "max-age=3600"
-              },
-              {
-                "action": "set-header",
-                "name": "content-type",
-                "value": "text/javascript"
-              }
-            ],
-            "request": []
-          }
-        },
-        {
-          "path": "/__xdn__/sw-manifest.js",
-          "match": [
-            {
-              "value": "${path}",
-              "matchRegex": "^/__xdn__/sw\\-manifest\\.js(?=\\?|$)"
+              "matchRegex": "^/__xdn__/cache\\-manifest\\.js(?=\\?|$)"
             }
           ],
           "cache": {
