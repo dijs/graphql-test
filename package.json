@@ -5,13 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "xdn build",
-    "start": "xdn run --production",
-    "deploy": "xdn deploy"
+    "start": "xdn run",
+    "deploy": "xdn deploy",
+    "xdn": "xdn"
   },
   "dependencies": {
-    "@xdn/core": "^1.15.0-alpha.2",
+    "@xdn/core": "file:.yalc/@xdn/core",
     "@xdn/next": "^1.15.0-alpha.2",
     "next": "9.3.5",
+    "node-fetch": "^2.6.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
