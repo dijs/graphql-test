@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "xdn build",
-    "start": "xdn run --production",
+    "start": "xdn run",
+    "start:prod": "xdn run --production",
     "deploy": "xdn deploy",
     "xdn": "xdn"
   },
