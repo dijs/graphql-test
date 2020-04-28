@@ -13,7 +13,7 @@ module.exports = app => {
           maxAgeSeconds: 60 * 60 * 24,
         }
       })
-      proxy()
+      return proxy('__js__')
     })
     .use(nextMiddleware)
 }
