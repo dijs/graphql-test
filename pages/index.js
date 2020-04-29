@@ -28,7 +28,7 @@ function useCountries() {
           }
         }
       }`;
-      const res = await fetch('https://countries.trevorblades.com/', {
+      const res = await fetch('/api/testql', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query }),
