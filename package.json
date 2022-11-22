@@ -13,7 +13,7 @@
   "dependencies": {
     "@xdn/core": "^1.16.0-alpha.1",
     "@xdn/next": "^1.16.0-alpha.1",
-    "next": "9.3.5",
+    "next": "13.0.4",
     "node-fetch": "^2.6.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
